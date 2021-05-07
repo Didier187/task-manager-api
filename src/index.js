@@ -8,9 +8,9 @@ const { json } = require('express')
 const app = express()
 const port = process.env.PORT
 
-app.use((req,res, next) => {
-    res.status(503).send('Site is currently down, check back soon')
-}) 
+// app.use((req,res, next) => {
+//     res.status(503).send('Site is currently down, check back soon')
+// }) 
 
 app.use(express.json())
 app.use(userRouter)
